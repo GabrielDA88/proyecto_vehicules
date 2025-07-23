@@ -2,7 +2,8 @@
 
 import pandas as pd 
 import plotly.express as px
-import streamlit as stm 
+import streamlit as stm
+import numpy as np
 
 # Colocación de cabecera
 
@@ -78,3 +79,5 @@ if analis_01:
 
     hist_plot = px.histogram(car_data, x = variable[0], y = variable[1])
     stm.plotly_chart(hist_plot, use_container_width=True )
+
+stm.divider()
